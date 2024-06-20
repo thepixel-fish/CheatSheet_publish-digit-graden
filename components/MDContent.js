@@ -52,10 +52,6 @@ function MDContent({content, backLinks, handleOpenNewContent}) {
             <div>
                 <BackLinks linkList={backLinks}/>
             </div>
-            <hr/>
-            <footer>
-                <p>Powered by  <a href="https://github.com/TuanManhCao/digital-garden">Mind Stone</a>, © 2022</p>
-            </footer>
         </div>
     );
 }

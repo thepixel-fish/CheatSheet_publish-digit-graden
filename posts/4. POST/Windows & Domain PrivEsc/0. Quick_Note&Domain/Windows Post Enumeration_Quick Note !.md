@@ -144,7 +144,7 @@ tree /F #显示包含文件
 tree /A #使用标准ASCII字符绘树状图
 dir /S C:\path\to\directory
 
-findstr /SIM /C:"password" *.txt *.ini *.cfg *.config *.xml
+findstr /SIM /c:"password" *.txt *.ini *.cfg *.config *.xml
 dir /S /B *pass*.txt == *pass*.xml == *pass*.ini == *cred* == *vnc* == *.config*
 #history
 foreach($user in ((ls C:\users).fullname)){cat "$user\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt" -ErrorAction SilentlyContinue}

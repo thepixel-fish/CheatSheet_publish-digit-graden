@@ -12,6 +12,10 @@ redis-cli -h 192.168.120.85 -a Ready4Redis?
 >AUTH <username> <password>
 >client list
 >CONFIG GET *
+# Interact
+select <db numble>
+keys * #显示所有键值
+get <key name>
 ```
 
 # RCE

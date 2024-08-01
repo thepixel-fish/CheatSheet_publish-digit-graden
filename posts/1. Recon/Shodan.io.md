@@ -28,3 +28,17 @@ other filter: City Country Geo (coordinates) Hostname net (based on IP / CIDR) o
 
 有趣的过滤器：`has_screenshot:true encrypted attention` ——使用光学字符识别和远程桌面来查找因勒索软件而受到威胁的互联网上的机器。
 `screenshot.label:ics`——使用机器学习，Shodan可以识别与互联网连接的工业控制系统。
+```bash
+# 1. 查询时可以接续查询下favicon.hash 2. 通过网站的商标文件位置查询
+http.favicon.hash:<hash> #使用企业的商标搜索资产
+```
+通过商标路径查询：主要使用了[mmh3](https://github.com/hajimes/mmh3)来得到hash
+```python
+import mmh3
+import requests
+ 
+response = requests.get('https://www.baidu.com/favicon.ico')
+favicon = response.content.encode('base64') #将获取的favicon base64编码
+hash = mmh3.hash(favicon) #通过mmh3.hash进行哈希
+print(hash)
+```

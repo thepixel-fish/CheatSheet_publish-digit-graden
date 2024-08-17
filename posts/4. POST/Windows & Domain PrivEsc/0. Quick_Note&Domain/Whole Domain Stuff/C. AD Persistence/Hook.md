@@ -5,9 +5,9 @@ https://github.com/clymb3r/Misc-Windows-Hacking
 https://github.com/clymb3r/PowerShell/blob/master/Invoke-ReflectivePEInjection/Invoke-ReflectivePEInjection.ps1
 #使用 Visual Studio Install 编译
 ```
-使用静态库编译![[Pasted image 20240625215455.png|350]]
-![[Pasted image 20240625215522.png|300]]
-![[Pasted image 20240625215533.png]]
+使用静态库编译
+
+
 将编译后的文件上传后执行
 ```powershell
 Set-ExecutionPolicy bypass

@@ -1,6 +1,6 @@
 # Tunnling
 ## ssh
-![[Pasted image 20240227200023.png|500]]
+
 **需要可交互的TTY！**
 由SSH服务器进行转发
 ### Local Port Forwording
@@ -66,7 +66,7 @@ chisel.exe client 192.168.119.5:8080 R:80:172.16.6.241:80
 ## ligolo
 Release: https://github.com/nicocha30/ligolo-ng/releases
 ### Set up
-   ![[Pasted image 20240422144031.png]]
+   
    ```bash
    $ go build -o agent cmd/agent/main.go
    $ go build -o proxy cmd/proxy/main.go

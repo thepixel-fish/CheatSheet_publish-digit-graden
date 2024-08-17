@@ -54,7 +54,7 @@ done
 LXD 是一个管理 API，用于处理 Linux 系统上的 LXC 容器。它将为本地 lxd 组的任何成员执行任务。它不会将调用用户的权限与要求其执行的函数进行匹配
 #### Container Tech
 将一个程序运行的过程进行打包
-![[Container_tech.png]]
+
 
 ### LXD Vulnerable
 #### Env

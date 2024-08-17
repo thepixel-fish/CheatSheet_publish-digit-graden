@@ -1,7 +1,7 @@
 # CDN Check
 >通过各种查询方式来找寻是否启动了CDN服务
 ### 1. Ping目标主域名
-当ping出来的域名很长一串或者存在明显的cdn，ali，tencent字段大概率存在CDN。![[Pasted image 20240625222056.png|500]]
+当ping出来的域名很长一串或者存在明显的cdn，ali，tencent字段大概率存在CDN。
 ### 2. 域名查询
 DNSDumpster: www.dnsdumpster.com
 **一个域名对应多个IP可判断大概率使用的CDN**
@@ -22,7 +22,7 @@ $ nslookup OPTIONS {$DOMAIN_NAME_SERVER}
 #e.g.
 $ nslookup -type=A tryhackme.com 1.1.1.1
 ```
-![[Pasted image 20240625222131.png|300]]
+
 ### 3. 多地Ping，使用下列网站实现多地ping
 	http://ping.chinaz.com/
 	https://www.17ce.com/
@@ -30,7 +30,7 @@ $ nslookup -type=A tryhackme.com 1.1.1.1
 	http://ping.aizhan.com/
 	http://ce.cloud.360.cn/
 提供了多个IP地址；查看多地Ping的结果，境外访问的IP大概率是真实IP
-![[Pasted image 20240625222252.png]]
+
 ### 4. 通过子域名查找真实IP
 CDN服务昂贵，通常只有访问量较大或主站会使用CDN服务。可以通过查找域的子域名，根据子域名的IP确定真实IP
 360quake/fofa/hunter/钟馗之眼等进行查找`domain="<Domain_name>"  domain:"<Domain_name>"`

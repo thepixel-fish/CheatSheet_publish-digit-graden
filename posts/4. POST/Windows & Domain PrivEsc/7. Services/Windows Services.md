@@ -125,8 +125,8 @@ move c:\{$payload_download_dir}\rev-svc2.exe c:\{$writable_path}\{$exploit_servi
 $env:
 dir env:
 ```
-![[Pasted image 20240224174047.png|400]]
-![[Pasted image 20240224174907.png]]
+
+
 
 | Path                                                              |                                Example |
 | :---------------------------------------------------------------- | -------------------------------------: |
